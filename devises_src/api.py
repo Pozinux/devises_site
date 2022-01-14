@@ -30,7 +30,7 @@ def get_rates(currencies, days=30):
     
     # Pour tester 
     # pprint(api_rates)
-    # return None, None
+    # return None, None 
 
     # Création d'une compréhension de dictionnaire
     # On va boucler sur les devises et pour chaque devis on va créer une paire de clé (currency:). La clé va être la devise et la valeur une liste vide
