@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+#from devises_src.dashboard_app.views import fonctionQuiFaitCoucou
+from dashboard_app.views import fonctionQuiFaitCoucou
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),  # url qui nous permet d'accèder à l'interface d'administration quand on met /admin à la suite
+    path('coucou/', fonctionQuiFaitCoucou)
 ]
