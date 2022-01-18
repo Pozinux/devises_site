@@ -13,7 +13,7 @@ def dashboard(request, days_range=60, currencies="CAD"):
     days, rates = api.get_rates(currencies=currencies.split(","), days=days_range)
     page_label = {7: "Semaine", 30: "Mois", 365: "Année"}.get(days_range, "Personnalisé")
 
-    return render(request, "dashboard_app/index.html", context={"data": rates,
+    return render(request, "dashboard_app_templates/index.html", context={"data": rates,
                                                          "days_labels": days,
                                                          "currencies": currencies,
                                                          "page_label": page_label})
